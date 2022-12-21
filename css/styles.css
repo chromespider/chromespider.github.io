@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* outline: 1px dotted crimson; */
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Cutive Mono', monospace;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+
+    margin: .5em;
+    padding: .5em;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+
+    font-size: 1rem;
+    font-weight: bold;
+    outline: 2px solid black;
+    cursor: pointer;
+    color: black;
+
+    margin: .8em;
+    padding: .8em;
+}
+
+.project:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.project:hover img {
+    visibility: hidden;
+}
+
+.project img {
+    width: 36px;
+    height: 36px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: crimson;
+    margin: .5em;
+}
+
+@media screen and (min-width: 425px) {
+    .logo {
+        font-size: 1.5rem;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .project-container {
+        width: 80vw;
+        max-width: 25em;
+    }
+
+    .project {
+        margin: .5em;
+        font-size: 1.3rem;
+    }
+
+    .project img {
+        width: 48px;
+        height: 48px;
+    }
+
+    a {
+        font-size: 1.4rem;
+        margin: 1em;
+    }
+}
